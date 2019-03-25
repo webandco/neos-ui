@@ -117,7 +117,7 @@ test:
 	$(lerna) run test --concurrency 1
 
 test-e2e-saucelabs:
-	bash Tests/IntegrationTests/e2e.sh saucelabs:chrome
+	bash Tests/IntegrationTests/e2e.sh "saucelabs:safari,saucelabs:chrome,saucelabs:firefox,saucelabs:microsoftedge"
 
 test-e2e:
 	bash Tests/IntegrationTests/e2e.sh chrome
